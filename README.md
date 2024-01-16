@@ -30,6 +30,15 @@ This is a Single Page Application (SPA) built with React that showcases anime co
 - Framer Motion
 - Styled Components
 
+## Project Structure
+- src/: Contains the source code
+    - components/: Reusable React components
+    - pages/: React components representing individual pages
+    - styles/: CSS and styled-components files
+    - utils/: Utility functions and custom hooks
+- public/: Public assets and HTML template
+- README.md: Project documentation
+
 ## Getting Started
 
 1. Clone the repository:
@@ -37,13 +46,14 @@ This is a Single Page Application (SPA) built with React that showcases anime co
    ```bash
    git clone https://github.com/luka103/anime-website.git
 
+2. Install dependencies:
 
-## Project Structure
-- Project Structure
-- src/: Contains the source code
-- components/: Reusable React components
-- pages/: React components representing individual pages
-- styles/: CSS and styled-components files
-- utils/: Utility functions and custom hooks
-- public/: Public assets and HTML template
-- README.md: Project documentation
+    ```bash
+    cd react-anime-website
+    npm install
+
+3. Run the development server:
+
+    ```bash
+    npm start
+
