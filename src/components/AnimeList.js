@@ -22,7 +22,7 @@ const AnimeList = ({ animeList }) => {
               navigate(`/anime-website/anime/${anime.id}`);
             }}
           >
-
+            {anime.attributes.canonicalTitle}
             {/* <Link to={`/anime/${anime.id}`}>{anime.attributes.canonicalTitle}</Link> */}
           </motion.li>
         ))}
