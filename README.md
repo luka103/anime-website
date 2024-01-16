@@ -8,8 +8,7 @@ This is a Single Page Application (SPA) built with React that showcases anime co
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
