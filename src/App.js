@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import AnimeDetailsPage from './pages/AnimeDetailsPage';
@@ -6,14 +6,11 @@ import About from './pages/About';
 import Navigation from './components/Navigation';
 
 function App() {
-  const [showFooter, setShowFooter] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY || document.documentElement.scrollTop;
-      const threshold = 100; 
 
-      setShowFooter(scrollY > threshold);
     };
 
     window.addEventListener('scroll', handleScroll);

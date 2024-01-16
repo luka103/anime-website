@@ -39,10 +39,10 @@ const Navigation = () => {
     <Navbar>
       <NavList>
         <NavItem>
-          <NavLink href="/">Home</NavLink>
+          <NavLink href="anime-website/">Home</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="/about">About</NavLink>
+          <NavLink href="anime-website/about">About</NavLink>
         </NavItem>
         <NavItem>
           <DarkModeToggle />
