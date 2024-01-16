@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useNavigate } from "react-router-dom";
 import '../styles/AnimeList.css'; 
@@ -19,12 +18,12 @@ const AnimeList = ({ animeList }) => {
           <motion.li
             key={anime.id}
             whileHover={{ scale: 1.1 }}
+            onClick={() =>{
+              navigate(`/anime-website/anime/${anime.id}`);
+            }}
           >
 
-          onClick={() =>{
-          navigate(`/anime-website/anime/${anime.id}`);
-        }}
-
+            {/* <Link to={`/anime/${anime.id}`}>{anime.attributes.canonicalTitle}</Link> */}
           </motion.li>
         ))}
       </ul>
