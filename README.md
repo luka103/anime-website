@@ -36,3 +36,14 @@ This is a Single Page Application (SPA) built with React that showcases anime co
 
    ```bash
    git clone https://github.com/luka103/anime-website.git
+
+
+## Project Structure
+- Project Structure
+- src/: Contains the source code
+- components/: Reusable React components
+- pages/: React components representing individual pages
+- styles/: CSS and styled-components files
+- utils/: Utility functions and custom hooks
+- public/: Public assets and HTML template
+- README.md: Project documentation
