@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import AnimeList from '../components/AnimeList';
 import SearchForm from '../components/SearchForm';
+import styled from 'styled-components';
 import axios from 'axios';
+
+const StyledH1 = styled.h1`
+  color: white;
+`;
 
 const Home = () => {
   const [animeList, setAnimeList] = useState([]);
@@ -26,7 +31,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Anime Website</h1>
+      <StyledH1>Anime Website</StyledH1>
       <SearchForm onSearch={handleSearch} />
       <AnimeList animeList={animeList} />
     </div>
