@@ -25,9 +25,9 @@ function App() {
       <div style={{ minHeight: '100vh' }}>
         <Navigation/>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/anime/:id" element={<AnimeDetailsPage />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/anime-website" element={<Home />} />
+          <Route path="/anime-website/anime/:id" element={<AnimeDetailsPage />} />
+          <Route path="/anime-website/about" element={<About />} />
         </Routes>
       </div>
     </Router>

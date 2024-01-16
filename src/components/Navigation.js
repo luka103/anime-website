@@ -37,10 +37,10 @@ const Navigation = () => {
   return (
     <NavigationContainer>
       <NavigationButtons>
-        <NavigationButton onClick={() => window.location.href = '/'}>
+        <NavigationButton onClick={() => window.location.href = '/anime-website'}>
           Home
         </NavigationButton>
-        <NavigationButton onClick={() => window.location.href = '/about'}>
+        <NavigationButton onClick={() => window.location.href = '/anime-website/about'}>
           About
         </NavigationButton>
       </NavigationButtons>
