@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import DarkModeToggle from './DarkModeToggle';
+import { useNavigate } from "react-router-dom";
+
 
 const NavigationContainer = styled.div`
   background-color: #333;
@@ -33,14 +35,18 @@ const NavigationButton = styled.button`
 `;
 
 const Navigation = () => {
-  
+  let navigate = useNavigate();
   return (
     <NavigationContainer>
       <NavigationButtons>
-        <NavigationButton onClick={() => window.location.href = '/anime-website'}>
+        <NavigationButton onClick={() => {
+          navigate(`/anime-website/`);
+        }}>
           Home
         </NavigationButton>
-        <NavigationButton onClick={() => window.location.href = '/anime-website/about'}>
+        <NavigationButton onClick={() =>{
+          navigate(`/anime-website/about`);
+        }}>
           About
         </NavigationButton>
       </NavigationButtons>
