@@ -20,9 +20,9 @@ const AnimeList = ({ animeList }) => {
             whileHover={{ scale: 1.1 }}
             onClick={() =>{
               navigate(`/anime-website/anime/${anime.id}`);
-            }}
+            }} 
           >
-            {anime.attributes.canonicalTitle}
+            <h3>{anime.attributes.canonicalTitle}</h3>
             {/* <Link to={`/anime/${anime.id}`}>{anime.attributes.canonicalTitle}</Link> */}
           </motion.li>
         ))}
